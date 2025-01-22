@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const myDiv = document.getElementById('myDiv');
+      myDiv.innerHTML = "<p>This text will be shown</p>";
+    });
+  </script>
+</body>
+</html>
