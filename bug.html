@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // This code attempts to access the div before it's fully loaded in DOM
+    const myDiv = document.getElementById('myDiv');
+    myDiv.innerHTML = "<p>This text will not be shown</p>";
+  </script>
+</body>
+</html>
